@@ -48,6 +48,8 @@
 							<li><a href="ALMIEngine.html">Product Initialization</a></li>
 							<li><a href="ALProductAllocation.html">Product Allocation</a></li>
 							<li><a href="ALMethodCreation.html">Method Creation</a></li>
+							<li><a href="ALRDS.html">RDS Creation</a></li>
+							<li><a href="ALSpreadSheet.html">Spread Sheet Creation</a></li>
 							
 						</ul>
 					</li>
@@ -178,7 +180,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-12">Product Initialization</h5>
+                            <h5 class="m-b-12">Method Creation</h5>
                         </div>
                         
                     </div>
@@ -221,8 +223,10 @@
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <select class="form-control" id="exampleFormControlSelect1">
-                                            <option value="">--Type--</option>
-                                            <option>Process</option>
+                                            <option value="">--Process types--</option>
+                                            <option>Method Creation</option>
+                                            <option>RDS Creation</option>
+                                            <option>Automation</option>
                                             
                                         </select>
                                     </div>
@@ -246,7 +250,7 @@
                             </div>
 							<div class="row">
 								<div class="col-sm-12" style="text-align: center;">
-									<button type="button" class="btn  btn-primary">Start</button>
+									<button type="button" class="btn  btn-primary" onClick="Start()">Start</button>
 									<button type="button" class="btn btn-secondary" onclick="window.location.href='ALMethodCreation.html'">Back</button>
 								</div>
 							</div>
@@ -282,3 +286,10 @@
 </body>
 
 </html>
+
+<script>
+	function Start() {
+		var wshShell = new ActiveXObject("WScript.Shell");
+wshShell.Run("C:\\BAT FILE\\dna.bat")
+	}
+</script>

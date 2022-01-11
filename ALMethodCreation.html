@@ -48,6 +48,8 @@
 							<li><a href="ALMIEngine.html">Product Initialization</a></li>
 							<li><a href="ALProductAllocation.html">Product Allocation</a></li>
 							<li><a href="ALMethodCreation.html">Method Creation</a></li>
+							<li><a href="ALRDS.html">RDS Creation</a></li>
+							<li><a href="ALSpreadSheet.html">Spread Sheet Creation</a></li>
 							
 						</ul>
 					</li>
@@ -68,7 +70,7 @@
 					
 					<a href="dashboard.html" class="b-brand">
 						<!-- ========   change your logo hear   ============ -->
-						<img src="assets/images/img.png" alt="" width="190px" class="logo">
+						<img src="assets/images/img.png" alt="" style="width:190px" class="logo">
 						
 					</a>
 					<a href="#!" class="mob-toggler">
@@ -194,10 +196,22 @@
                     <div class="card-body">
                         <form>
                             <div class="row">
-                                
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="floating-label" for="Text">DNA ID</label>
+                                        
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option value="">Filter Options</option>
+                                            <option>Reference ID</option>
+                                            <option>Method Created</option>
+                                            <option>RDS Created</option>
+                                            <option>Spreadsheet</option>
+                                            <option>Product Type</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label class="floating-label" for="Text">Value</label>
                                         <input type="text" class="form-control" id="Text" placeholder="">
                                     </div>
                                 </div>

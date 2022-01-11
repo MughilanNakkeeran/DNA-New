@@ -180,7 +180,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-12">Product Allocation</h5>
+                            <h5 class="m-b-12">Method Creation</h5>
                         </div>
                         
                     </div>
@@ -198,58 +198,30 @@
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="floating-label" for="Email">DNA ID</label>
-                                        <input type="text" class="form-control" id="Text" placeholder="DNA 001">
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label class="floating-label" for="Email">Product Name</label>
-                                        <input type="text" class="form-control" id="Text" placeholder="Product 1">
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label class="floating-label" for="Text">Due Date</label>
-                                        <input type="text" class="form-control" id="Text" placeholder="01/03/2022">
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label class="floating-label" for="Text">Product Code</label>
-                                        <input type="text" class="form-control" id="Text" placeholder="P 001">
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option value="">--Process types--</option>
-                                            <option>Method Creation</option>
-                                            <option>RDS Creation</option>
-                                            <option>Automation</option>
-                                            
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="form-group">
                                         
                                         <select class="form-control" id="exampleFormControlSelect1">
-                                            <option value="">--Assign--</option>
-                                            <option>MN001</option>
-                                            <option>JA001</option>
-                                            
+                                            <option value="">Filter Options</option>
+                                            <option>Reference ID</option>
+                                            <option>Method Created</option>
+                                            <option>RDS Created</option>
+                                            <option>Spreadsheet</option>
+                                            <option>Product Type</option>
                                         </select>
                                     </div>
                                 </div>
-                                
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label class="floating-label" for="Text">Value</label>
+                                        <input type="text" class="form-control" id="Text" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </div>
                             </div>
-							<div class="row">
-								<div class="col-sm-12" style="text-align: center;">
-									<button type="button" class="btn  btn-primary">Assign</button>
-									<button type="button" class="btn btn-secondary" onclick="window.location.href='ALProductAllocation.html'">Back</button>
-								</div>
-							</div>
+							
                         </form>
                     </div>
                 </div>
@@ -257,7 +229,90 @@
             
         </div>
 
-		
+		<div class="row">
+            <!-- Zero config table start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        
+                    </div>
+                    <div class="card-body">
+                        <div class="">
+                            <table id="simpletable" class="table table-striped table-bordered nowrap dt-responsive table-responsive-lg">
+                                <thead>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Product Code</th>
+                                        <th>Product Name</th>
+                                        <th>DNA ID</th>
+                                        <th>Spec No</th>
+                                        <th>STP No</th>
+                                        <th>Status</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr onclick="window.location.href='RDSCreationConfig.html'">
+                                        <td>1</td>
+                                        <td>P 001</td>
+                                        <td>Product 1</td>
+                                        <td>DNA 001</td>
+                                        <td>SPEC 001</td>
+                                        <td>STP 001</td>
+                                        <td><span class="badge badge-pill badge-primary">Added</span></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>P 002</td>
+                                        <td>Product 2</td>
+                                        <td>DNA 002</td>
+                                        <td>SPEC 002</td>
+                                        <td>STP 002</td>
+                                        <td><span class="badge badge-pill badge-primary">Added</span></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>P 003</td>
+                                        <td>Product 3</td>
+                                        <td>DNA 003</td>
+                                        <td>SPEC 003</td>
+                                        <td>STP 003</td>
+                                        <td><span class="badge badge-pill badge-primary">Added</span></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>P 004</td>
+                                        <td>Product 4</td>
+                                        <td>DNA 004</td>
+                                        <td>SPEC 004</td>
+                                        <td>STP 004</td>
+                                       <td><span class="badge badge-pill badge-primary">Added</span></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>P 005</td>
+                                        <td>Product 5</td>
+                                        <td>DNA 005</td>
+                                        <td>SPEC 005</td>
+                                        <td>STP 005</td>
+                                       <td><span class="badge badge-pill badge-primary">Added</span></td>
+                                        
+                                    </tr>
+
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Zero config table end -->
+            
+        </div>
 
 		
         <!-- [ Main Content ] end -->

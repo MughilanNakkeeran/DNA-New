@@ -180,7 +180,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-12">Product Allocation</h5>
+                            <h5 class="m-b-12">Spread Sheet Creation</h5>
                         </div>
                         
                     </div>
@@ -233,21 +233,27 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option value="">--Assign--</option>
-                                            <option>MN001</option>
-                                            <option>JA001</option>
-                                            
-                                        </select>
+                                        <label class="form-label">Spec Path</label>
+                                        <div>
+                                            <input type="file" class="validation-file" name="validation-file">
+                                        </div>
+                                    </div>
+                                </div>
+
+								<div class="col-sm-4">
+                                    <div class="form-group">
+										<label class="form-label">Method File Path</label>
+                                        <div>
+                                            <input type="file" class="validation-file" name="validation-file">
+                                        </div>
                                     </div>
                                 </div>
                                 
                             </div>
 							<div class="row">
 								<div class="col-sm-12" style="text-align: center;">
-									<button type="button" class="btn  btn-primary">Assign</button>
-									<button type="button" class="btn btn-secondary" onclick="window.location.href='ALProductAllocation.html'">Back</button>
+									<button type="button" class="btn  btn-primary">Start</button>
+									<button type="button" class="btn btn-secondary" onclick="window.location.href='ALMethodCreation.html'">Back</button>
 								</div>
 							</div>
                         </form>
